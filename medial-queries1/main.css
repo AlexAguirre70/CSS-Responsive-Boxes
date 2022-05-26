@@ -1,3 +1,39 @@
 body {
   background: blanchedalmond;
 }
+
+/* Helper Code */
+.a,.b,.c {
+  background-color: orange;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
+/* Container CSS*/
+.container {
+ display: flex;
+ flex-flow: row wrap;
+ min-height: 200vh;
+ justify-content: space-between;
+ 
+}
+/* this will set CSS for the top child div*/
+.a {
+ min-height: 20vh; 
+ flex-basis: 100%;
+}
+/* this will set CSS for the top child div*/
+.b {
+  min-height: 120vh;
+  flex-basis: 75%;
+  justify-self: center;
+  flex-grow: 1;
+}
+.c {
+  min-height: 20vh;
+  flex-basis: 20%;
+  justify-self: center;
+  flex-grow: 1;
+  
+
+}

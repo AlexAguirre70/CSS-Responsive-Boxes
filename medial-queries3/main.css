@@ -1,3 +1,125 @@
 body {
   background: peachpuff;
 }
+/*Helper Code*/
+.a,.b,.c,.d,.e,.f,.g,.h {
+  border: 1px solid black;
+  margin: 10px;
+ 
+}
+
+
+/*Container CSS*/
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    min-width: max-content;
+    padding: 5px;
+    justify-content: space-between;
+    
+
+  }
+
+  /* A class CSS*/
+  .a{
+    background-color: red;
+    display: flex;
+    min-width: 100%;
+    min-height: auto;
+    width: 100%;
+     flex-grow:2;
+
+      
+  }
+/* CSS for container 2 */
+.container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: auto;
+  min-width: 72%;
+  justify-content: space-between;
+  flex-grow: 1;
+  
+}
+
+  /* B class CSS*/
+  .b {
+    background-color: yellow;
+    display: flex;
+    min-height: 1vh;
+    width: 30%;
+    flex-grow: 1;
+   
+  }
+ 
+  /* C class CSS*/
+  .c {
+    background-color: orangered;
+    display: flex;
+    min-height: 1vh;
+    width: 30%;
+    flex-grow: 1;
+    }
+
+  /* D class CSS*/
+  .d {
+    background-color: turquoise;
+    display: flex;
+    min-height: 1vh;
+    width: 30%;
+    flex-grow: 1;
+  }
+
+  /* E class CSS*/
+  .e { 
+    background-color: plum;
+    display: flex;
+    min-height: 1vh;
+    width: 30%;
+    flex-grow: 1;
+   
+  }
+
+/* F class CSS*/
+  .f {
+    background-color: purple;
+    display: flex;
+    min-height: 1vh;
+    width: 30%;
+    flex-grow: 1;
+     }
+
+/* g class CSS*/
+.g {
+  background-color: green;
+display: flex;
+min-height: 1vh;
+width: 30%;
+flex-grow: 1;
+}
+
+.h {
+  background-color: blue;
+display: flex;
+min-height: 1vh;
+width: 20%;
+flex-basis: 20%;   
+flex-grow: 2;    
+
+}
+
+   @media (max-width:600px){
+    .container2 , .h {
+      min-width: 100%;
+    }
+    .b,.c,.d,.e,.f,.g {
+      width:22%;
+    
+
+    }  
+    
+
+   }

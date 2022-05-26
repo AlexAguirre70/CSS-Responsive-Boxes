@@ -1,3 +1,99 @@
 body {
   background: papayawhip;
 }
+
+/*Helper Code*/
+.a,.b,.c,.d,.e,.f {
+  border: 1px solid black;
+  margin: 10px;
+ 
+}
+
+
+/*Container CSS*/
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    min-width: max-content;
+    padding: 5px;
+    justify-content: space-between;
+  }
+
+  /* A class CSS*/
+  .a{
+    background-color: cornflowerblue;
+    display: flex;
+    min-height: 1vh;
+    min-width: 100%;
+    width: 100%;
+      
+  }
+
+  /* B class CSS*/
+  .b {
+    background-color: coral;
+    display: flex;
+    min-height: 1vh;
+    min-width: max-content;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  /* CSS for container 2 */
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 1vh;
+    min-width: 72%;
+    justify-content: space-between;
+    flex-grow: 5;
+  }
+
+
+  /* C class CSS*/
+  .c {
+    background-color: cyan;
+    display: flex;
+    min-height: 1vh;
+    width: 20%;
+    flex-grow: 1;
+    }
+
+  /* D class CSS*/
+  .d {
+    background-color:dimgrey;
+    display: flex;
+    min-height: 1vh;
+    width: 20%;
+    flex-grow: 1;
+  }
+
+  /* E class CSS*/
+  .e { 
+    background-color: darkslateblue;
+    display: flex;
+    min-height: 1vh;
+    width: 20%;
+    flex-grow: 1;
+  }
+
+/* F class CSS*/
+  .f {
+      background-color: lightpink;
+    display: flex;
+    min-height: 1vh;
+    flex-grow: 2;
+    width: 20%;
+    flex-basis: 20%;
+    
+    
+   }
+   @media (max-width:600px){
+    .b, .f {
+      min-width: 100%;
+    }
+
+   }
